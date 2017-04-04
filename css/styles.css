@@ -14,7 +14,7 @@ canvas{
 	position: fixed;
 	top: 0;
 	display: inline-block;
-	z-index: -5;
+	z-index: -1;
 	vertical-align: baseline;
 	background: #696969;
 }
@@ -31,104 +31,43 @@ body{
 	height: 100vh;
 	width: 100%;
 	text-align: center;
-	margin-bottom: 20px;
 }
 
 div{
 	background: transparent;
 }
 
-
-.mynav ul{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	list-style-type: none;
-	padding: 0;
-}
-.mynav li:not(:last-child){
-	margin-right: 20px;
-}
-
-.mynav text a{
-	display: block;
-	font-size: 3em;
-	fill: white;
-	text-decoration: none;
-	font-family: oswald-light;
-	padding: 7px 15px;
-}
-
-.target {
-	position: absolute;
-	border-bottom: 4px solid transparent;
-	z-index: -1;
-	transform: translateX(-60px);
-}
-
-.mynav a,
-.target{
-	transition: all .3s ease-in-out;
-}
-/* nav#nav{
+div#nav{
 	width: 100%;
 	font-family: oswald;
 	color: #fff;
 	font-size: 2em;
 	text-align: center;
 }
-nav#nav > ul {
+div#nav > ul {
 	text-align: center;
 }
-nav#nav > ul > li{
+div#nav > ul > li{
 	margin-right: 1em;
 	display: inline-block;
 	padding: .5em;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-} */
-.projdivider{
-	width: 75vw;
-	margin: 0 auto;
 }
-.projectpanel{
-	height: 50vh;
-	font-family: quattrocento;
-	color: white;
-}
-.proj_card{
-	width: 33%;
-	height: 40vh;
-	margin-top: 10vh;
-	margin-left: 17vw;
-	display: inline-block;
-}
-.right{
-	margin-right: 17vw;
-	margin-left: 0;
-	float: right;
-	text-align: right;
-}
+
 div#title-box{
 	width: 100%;
 	position: relative; 
-	top: 20%;
+	top: 35%;
 }
 div#name{
 	font-family: oswald-light;
 	color: #fff;
-	font-size: 8em;
+	font-size: 5em;
 	margin: 0 auto;
 	width: 100%;
 	display: block;
 	text-align: center;
 	position: absolute;
-}
-.down{
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	display: flex;
-	justify-content: center;
 }
