@@ -4,6 +4,9 @@ const textbox = document.querySelectorAll('.mynav text');
 const svg = document.querySelector('svg');
 window.addEventListener('resize', resizeFunc);
 var nav_offset = 0;
+var winwidth = window.innerWidth;
+svg.setAttribute('width', winwidth);
+
 
 for(var i=0;i<textbox.length;i++){
 	textbox[i].setAttribute('x', nav_offset);
@@ -11,7 +14,16 @@ for(var i=0;i<textbox.length;i++){
 	nav_offset += bbox.width + 10;
 }
 
-svg.setAttribute('width', nav_offset);
+
+
+
+var centeroffset = (winwidth - nav_offset)/2;
+
+for(i=0;i<textbox.length;i++){
+	textbox[i].setAttribute('x', parseInt(textbox[i].getAttribute('x'))+centeroffset);
+}
+
+
 
 for( i=0;i<links.length;i++){
 	links[i].addEventListener('click', (e) => e.preventDefault());
