@@ -3,11 +3,13 @@
 	var POINTS = { x: 15, y: 15 }
 	var MOUSE_AOE = 100
 	
-	var CLEAR_COLOR = 0x696969
-	var MAIN_COLOR  = 0x3F3F3F
+	var CLEAR_COLOR = 0x74AFAD
+	var MAIN_COLOR  = 0x558C89
  //0x0f88f2
  //0x0172FF
 	
+ //3F3F3F
+ //696969
 	var WIDTH  = window.innerWidth
 	var HEIGHT = window.innerHeight
 	var ASPECT = WIDTH / HEIGHT

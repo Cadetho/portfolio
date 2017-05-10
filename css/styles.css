@@ -1,4 +1,4 @@
-@font-face{
+/* @font-face{
 	font-family: oswald;
 	src: url(fonts/oswald/Oswald-Regular.ttf);
 }
@@ -10,6 +10,18 @@
 	font-family: oswald-light;
 	src: url(fonts/oswald/Oswald-Light.ttf);
 }
+ */
+@font-face{
+	font-family: brownhill;
+	src: url(fonts/Brownhill-Script/Brownhill-Script.ttf);
+}
+
+@font-face{
+	font-family: avantgarde;
+	src: url(fonts/AvantGarde/AvantGarde.ttf);
+}
+
+
 canvas{
 	position: fixed;
 	top: 0;
@@ -38,8 +50,10 @@ body{
 div{
 	background: transparent;
 }
-
-
+.main-nav{
+	position: fixed;
+}
+/* 
 .mynav ul{
 	display: flex;
 	justify-content: center;
@@ -51,19 +65,19 @@ div{
 	margin-right: 20px;
 }
 
-.mynav text a{
+.mynav a{
 	display: block;
 	font-size: 3em;
 	fill: white;
 	text-decoration: none;
-	font-family: oswald-light;
+	font-family: avantgarde;
 	padding: 7px 15px;
 	z-index: 10;
 }
-
+*/
 .target {
 	position: absolute;
-	border-bottom: 4px solid transparent;
+	border-left: 4px solid transparent;
 	z-index: -1;
 	transform: translateX(-60px);
 }
@@ -72,8 +86,8 @@ div{
 .target{
 	transition: all .3s ease-in-out;
 }
-/* nav#nav{
-	width: 100%;
+nav#nav{
+
 	font-family: oswald;
 	color: #fff;
 	font-size: 2em;
@@ -83,44 +97,77 @@ nav#nav > ul {
 	text-align: center;
 }
 nav#nav > ul > li{
-	margin-right: 1em;
+	margin-right: 0.2em;
 	display: inline-block;
-	padding: .5em;
+
+	float: left;
+	clear: left;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-} */
+} 
+nav#nav > ul > li > a{
+	display: block;
+	font-size: 1em;
+	color: white;
+	text-decoration: none;
+	font-family: avantgarde;
+	z-index: 10;
+	padding: .5em;
+}
+h2{
+	font-size: 3em;
+	margin-top: 0;
+	font-family:brownhill;
+}
+.projects{
+	z-index: 10;
+}
 .projdivider{
 	width: 75vw;
 	margin: 0 auto;
 }
+
+.portfolio_pic{
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
 .projectpanel{
-	height: 50vh;
-	font-family: quattrocento;
-	color: white;
+	height: 40vh;
+	background-color: #ECECEA;
+	font-family: avantgarde;
+	color: #15354c;
+	width: 60%;
+	position: relative;
+	margin: 0 auto 5% auto;
+	-webkit-box-shadow: 2px 2px 4px 4px;
+	-moz-box-shadow:    2px 2px 4px 4px; 
+	box-shadow:         2px 2px 4px 4px;
 }
 .proj_card{
-	width: 33%;
-	height: 40vh;
-	margin-top: 10vh;
-	margin-left: 17vw;
+	padding-top: 5%;
+	padding-left: 5%;
+	margin: 0;
+	width: 50%;
 	display: inline-block;
 }
 .right{
-	margin-right: 17vw;
-	margin-left: 0;
 	float: right;
+	padding-left: 0%;
+	padding-right: 5%;
 	text-align: right;
 }
 div#title-box{
 	width: 100%;
 	position: relative; 
-	top: 20%;
+	top: 35%;
 }
 div#name{
-	font-family: oswald-light;
+	font-family: brownhill;
 	color: #fff;
-	font-size: 8em;
+	font-size: 14em;
 	margin: 0 auto;
 	width: 100%;
 	display: block;

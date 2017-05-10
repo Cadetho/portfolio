@@ -1,37 +1,44 @@
 const target = document.querySelector('.target');
-const links = document.querySelectorAll('.mynav text a');
-const textbox = document.querySelectorAll('.mynav text');
+const links = $('.mynav a');
+const textbox = document.querySelectorAll('.mynav');
 const svg = document.querySelector('svg');
 window.addEventListener('resize', resizeFunc);
-var nav_offset = 0;
 var winwidth = window.innerWidth;
-svg.setAttribute('width', winwidth);
 
 
-for(var i=0;i<textbox.length;i++){
-	textbox[i].setAttribute('x', nav_offset);
-	var bbox = textbox[i].getBBox();
-	nav_offset += bbox.width + 10;
-}
+var currentcontainer = 0;
 
-
-
-
-var centeroffset = (winwidth - nav_offset)/2;
-
-for(i=0;i<textbox.length;i++){
-	textbox[i].setAttribute('x', parseInt(textbox[i].getAttribute('x'))+centeroffset);
-}
+window.onscroll = function(){scrollFunction();}
 
 
 
 for( i=0;i<links.length;i++){
 	links[i].addEventListener('click', (e) => e.preventDefault());
-	links[i].addEventListener('mouseenter', mouseenterFunc);
-	
+	$(links[i]).mouseenter(mouseenterFunc);
+	links[i].addEventListener('mouseleave', mouseleaveFunc);
 }
+var containers = [{name: 'home', ele: $('#intro'), topdist: $('#intro').offset().top, menubutton: $('a#home')}, {name: 'projects', ele: $('#projects'), topdist: $('#projects').offset().top, menubutton: $('a#portfolio')}];
 
-function mouseenterFunc( ){
+
+$(links[currentcontainer]).trigger('mouseenter');
+function mouseleaveFunc(){
+	console.log(this);
+}
+function scrollFunction(){
+	if($(document).scrollTop()+window.innerHeight*0.3<(containers[currentcontainer].topdist)){
+			currentcontainer = currentcontainer-1;
+			$(links[currentcontainer]).trigger('mouseenter');
+	}
+	if(currentcontainer<containers.length-1){
+		if($(document).scrollTop()+window.innerHeight*0.7>(containers[currentcontainer+1].topdist)){
+			currentcontainer = currentcontainer+1;
+			$(links[currentcontainer]).trigger('mouseenter');
+		}
+	}
+
+}	
+
+function mouseenterFunc(){
 	if(!this.parentNode.classList.contains('active')){
 	for( var i=0; i<links.length; i++){
 		if(links[i].parentNode.classList.contains("active")){
@@ -39,14 +46,15 @@ function mouseenterFunc( ){
 		}
 		links[i].style.opacity = '0.25';
 	}
-	
+
 	
 	this.parentNode.classList.add('active');
 	this.style.opacity = '1';
 	
+	var position = $(this).position();
 	const width = this.getBoundingClientRect().width;
 	const height = this.getBoundingClientRect().height;
-	const left = this.getBoundingClientRect().left + window.pageYOffset;
+	const left = position.left
 	const top = this.getBoundingClientRect().top + window.pageXOffset;
 	const color = 'white';
 	

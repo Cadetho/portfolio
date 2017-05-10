@@ -5,21 +5,21 @@
 </head>
 <body>
 	<div id="intro">
-		<div>
-			<svg  id="nav" class ="mynav">
+		<div class="main-nav">
+<!-- 			<svg  id="nav" class ="mynav">
 					<text y="3.5em" height = "4em"><a href="">Home</a></text>
 					<text y="3.5em" height = "4em"><a href="">Portfolio</a></text>
 					<text y="3.5em" height = "4em"><a href="">About</a></text>
 					<text y="3.5em" height = "4em"><a href="">Contact</a></text>
-			</svg>
-<!-- 			<nav id="nav" class ="mynav">
+			</svg> -->
+			<nav id="nav" class="mynav">
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a id="home" href="">Home</a></li>
+					<li><a id="portfolio" href="">Portfolio</a></li>
+					<li><a id="about" href="">About</a></li>
+					<li><a id="contact" href="">Contact</a></li>
 				</ul>
-			</nav> -->
+			</nav>
 			<span class="target"></span>
 		</div>
 		<div id="title-box">
@@ -28,34 +28,32 @@
 		</div>
 		<div class="down"><i class="fa fa-angle-down" style="font-size:4em; color: white;"></i></div>
 	</div>
-	<div id="projects">
-		<hr class="projdivider" />
+	<div id="projects" class="projects">
+
 		<div id="ohccring" class="projectpanel">
 			<div id="ohccring_card" class="proj_card">
-				<strong>Project Name:</strong>OHCC Circular Navigation Menu <br /><br />
-				<strong>Date:</strong>Fall 2016 <br /><br />
-				<strong>Description:</strong> Created using D3.js this is a responsive and animated circular navigational menu for Open Health Care Center. It calculates label placement based upon label length and position on the circle. <br /><br />
-				<strong>Tools used:</strong>
+				<h2>OHCC Circular Navigation Menu</h2>
+				Fall 2016 <br /><br />
+				Created using D3.js this is a responsive and animated circular navigational menu for Open Health Care Clinic. It calculates label placement based upon label length and position on the circle. <br /><br />
+				
 				<div class="toolbox"></div>
 			</div>
+			<img src="OpenhealthcareAnim.gif" class="portfolio_pic">
 		</div>
-		<hr class="projdivider" />
+
 		<div id="brprovidermap" class="projectpanel">
 			<div id="brprovidermap_card" class="proj_card right">
-				<strong>Project Name:</strong>Baton Rouge Provider Data Mapping<br /><br />
-				<strong>Date:</strong>Jan 2017 - Present<br /><br />
-				<strong>Description:</strong> This was a project in collaboration with the Together BR group to map different health statistics in Baton Rouge and surrounding areas. This data was used to define health districs and secure funding to offer medical services to areas that are underserved.<br /><br />
-				<strong>Tools used:</strong>
+				<h2>Baton Rouge Provider Data Mapping</h2>
+				Jan 2017 - Present<br /><br />
+				This was a project in collaboration with the Together BR group to map different health statistics in Baton Rouge and surrounding areas. This data was used to define health districs and secure funding to offer medical services to areas that are underserved.<br /><br />
 				<div class="toolbox"></div>
 			</div>
 		</div>
-		<hr class="projdivider" />
 		<div id="laurablog" class="projectpanel">
-			<div id="laurablog_card" class="proj_card">
-				<strong>Project Name:</strong>OHCC Circular Navigation Menu <br /><br />
-				<strong>Date:</strong>Fall 2016 <br /><br />
-				<strong>Description:</strong> Created using D3.js this is a responsive and animated circular navigational menu for Open Health Care Center. It calculates label placement based upon label length and position on the circle. <br /><br />
-				<strong>Tools used:</strong>
+			<div id="brprovidermap_card" class="proj_card">
+				<h2>Baton Rouge Provider Data Mapping</h2>
+				Jan 2017 - Present<br /><br />
+				This was a project in collaboration with the Together BR group to map different health statistics in Baton Rouge and surrounding areas. This data was used to define health districs and secure funding to offer medical services to areas that are underserved.<br /><br />
 				<div class="toolbox"></div>
 			</div>
 		</div>
@@ -63,7 +61,10 @@
 	<div id="about"></div>
 	<div id="footer"></div>
 </body>
-<script src="js/jquery-3.2.0.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script src="js/three/three.min.js"></script>
 <script src="js/three/EffectComposer.js"></script>
 <script src="js/three/MaskPass.js"></script>
