@@ -20,6 +20,23 @@
 	font-family: avantgarde;
 	src: url(fonts/AvantGarde/AvantGarde.ttf);
 }
+@font-face{
+	font-family:hello;
+	src: url(fonts/HelloScript.ttf);
+}
+@font-face{
+	font-family:cormorant;
+	src: url(fonts/Cormorant-Medium.ttf);
+}
+
+@font-face{
+	font-family:dalle;
+	src: url(fonts/Dalle/Dalle_Typeface.ttf);
+}
+@font-face{
+	font-family:district;
+	src: url(fonts/district/DistProTh.ttf);
+}
 
 
 canvas{
@@ -88,7 +105,7 @@ div{
 }
 nav#nav{
 
-	font-family: oswald;
+	font-family:district;
 	color: #fff;
 	font-size: 2em;
 	text-align: center;
@@ -111,14 +128,14 @@ nav#nav > ul > li > a{
 	font-size: 1em;
 	color: white;
 	text-decoration: none;
-	font-family: avantgarde;
+	font-family:district;
 	z-index: 10;
 	padding: .5em;
 }
 h2{
 	font-size: 3em;
 	margin-top: 0;
-	font-family:brownhill;
+	font-family:dalle;
 }
 .projects{
 	z-index: 10;
@@ -137,7 +154,7 @@ h2{
 .projectpanel{
 	height: 40vh;
 	background-color: #ECECEA;
-	font-family: avantgarde;
+	font-family: district;
 	color: #15354c;
 	width: 60%;
 	position: relative;
@@ -164,15 +181,25 @@ div#title-box{
 	position: relative; 
 	top: 35%;
 }
-div#name{
-	font-family: brownhill;
+div#subtitle{
+	font-family: dalle;
 	color: #fff;
-	font-size: 14em;
+	font-size: 4em;
 	margin: 0 auto;
 	width: 100%;
 	display: block;
 	text-align: center;
-	position: absolute;
+
+}
+div#name{
+	font-family: dalle;
+	color: #fff;
+	font-size: 12em;
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	text-align: center;
+
 }
 .down{
 	width: 100%;
