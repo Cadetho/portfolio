@@ -1,43 +1,12 @@
-/* @font-face{
-	font-family: oswald;
-	src: url(fonts/oswald/Oswald-Regular.ttf);
-}
-@font-face{
-	font-family: quattrocento;
-	src: url(fonts/quattrocento/Quattrocento-Regular.ttf);
-}
-@font-face{
-	font-family: oswald-light;
-	src: url(fonts/oswald/Oswald-Light.ttf);
-}
- */
-@font-face{
-	font-family: brownhill;
-	src: url(fonts/Brownhill-Script/Brownhill-Script.ttf);
-}
 
 @font-face{
-	font-family: avantgarde;
-	src: url(fonts/AvantGarde/AvantGarde.ttf);
+	font-family:main;
+	src: url(fonts/Quando-Regular.ttf);
 }
 @font-face{
-	font-family:hello;
-	src: url(fonts/HelloScript.ttf);
+	font-family:body;
+	src: url(fonts/Judson-Regular.ttf);
 }
-@font-face{
-	font-family:cormorant;
-	src: url(fonts/Cormorant-Medium.ttf);
-}
-
-@font-face{
-	font-family:dalle;
-	src: url(fonts/Dalle/Dalle_Typeface.ttf);
-}
-@font-face{
-	font-family:district;
-	src: url(fonts/district/DistProTh.ttf);
-}
-
 
 canvas{
 	position: fixed;
@@ -105,7 +74,7 @@ div{
 }
 nav#nav{
 
-	font-family:district;
+	font-family:body;
 	color: #fff;
 	font-size: 2em;
 	text-align: center;
@@ -128,14 +97,15 @@ nav#nav > ul > li > a{
 	font-size: 1em;
 	color: white;
 	text-decoration: none;
-	font-family:district;
+	font-family:body;
 	z-index: 10;
 	padding: .5em;
 }
 h2{
-	font-size: 3em;
+	font-size: 1.5em;
 	margin-top: 0;
-	font-family:dalle;
+	font-family:main;
+	font-weight: normal;
 }
 .projects{
 	z-index: 10;
@@ -154,7 +124,7 @@ h2{
 .projectpanel{
 	height: 40vh;
 	background-color: #ECECEA;
-	font-family: district;
+	font-family: body;
 	color: #15354c;
 	width: 60%;
 	position: relative;
@@ -182,9 +152,9 @@ div#title-box{
 	top: 35%;
 }
 div#subtitle{
-	font-family: dalle;
+	font-family: main;
 	color: #fff;
-	font-size: 4em;
+	font-size: 2em;
 	margin: 0 auto;
 	width: 100%;
 	display: block;
@@ -192,9 +162,9 @@ div#subtitle{
 
 }
 div#name{
-	font-family: dalle;
+	font-family: main;
 	color: #fff;
-	font-size: 12em;
+	font-size: 7em;
 	margin: 0 auto;
 	width: 100%;
 	display: block;
